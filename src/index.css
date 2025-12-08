@@ -1,0 +1,27 @@
+/* src/index.css */
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Garante que não haja margens ou espaços indesejados */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Remove permanentemente as barras de rolagem */
+  background-color: #1a1a1a; /* Cor de fundo escura para a página */
+}
+
+/* Garante que o container do React ocupe toda a tela */
+#root {
+  width: 100vw;
+  height: 100vh;
+}
