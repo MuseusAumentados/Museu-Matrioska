@@ -48,16 +48,16 @@ const MapViewContent = ({ onSelect, onBack }) => (
 
         {/* Fileira de Cima */}
         <button className="map-room-btn room-top-1" onClick={() => onSelect('local1')}>Sala 1</button>
-        <button className="map-room-btn room-top-2" onClick={() => onSelect('local2')}>Sala 2</button>
-        <button className="map-room-btn room-top-3" onClick={() => onSelect('local3')}>Sala 3</button>
-        <button className="map-room-btn room-top-4" onClick={() => onSelect('local4')}>Sala 4</button>
+        <button className="map-room-btn room-top-2" onClick={() => onSelect('local7')}>Sala 2</button>
+        <button className="map-room-btn room-top-3" onClick={() => onSelect('local16')}>Sala 3</button>
+        <button className="map-room-btn room-top-4" onClick={() => onSelect('local19')}>Sala 4</button>
 
         {/* Coluna da Direita */}
-        <button className="map-room-btn room-right-long" onClick={() => onSelect('local5')}>Corredor</button>
+        <button className="map-room-btn room-right-long" onClick={() => onSelect('local23')}>Corredor</button>
 
         {/* Fileira de Baixo */}
-        <button className="map-room-btn room-bottom-1" onClick={() => onSelect('local6')}>Galeria</button>
-        <button className="map-room-btn room-bottom-2" onClick={() => onSelect('local7')}>Auditório</button>
+        <button className="map-room-btn room-bottom-1" onClick={() => onSelect('local26')}>Galeria</button>
+        <button className="map-room-btn room-bottom-2" onClick={() => onSelect('local31')}>Auditório</button>
       </div>
 
       <button className="back-button" onClick={onBack}> Voltar ao Menu </button>
