@@ -125,10 +125,9 @@ export default function App() {
   const handleSceneSelect = (key) => { handleFirstInteraction(); setCurrentSceneKey(key); setView('tour'); };
   
   const isMobile = /Mobi|Android/i.test(navigator.userAgent);
-
   return (
     <>
-      <YouTube videoId={videoId} opts={youtubeOptions} onReady={onPlayerReady} style={{ display: 'none' }} />
+      {/* <YouTube videoId={videoId} opts={youtubeOptions} onReady={onPlayerReady} style={{ display: 'none' }} /> */}
 
       {view === 'menu' && (
         <MenuScreen 
@@ -158,8 +157,8 @@ export default function App() {
 
       {/* Controles Flutuantes */}
       <div className="audio-controls">
-        <img src={icone_som} alt="Som" className={`sound-icon ${!isPlaying ? 'paused' : ''}`} onClick={togglePlay} />
-        <input type="range" min="0" max="100" value={volume} onChange={handleVolumeChange} className="volume-slider" />
+        {/* <img src={icone_som} alt="Som" className={`sound-icon ${!isPlaying ? 'paused' : ''}`} onClick={togglePlay} /> */}
+        {/* <input type="range" min="0" max="100" value={volume} onChange={handleVolumeChange} className="volume-slider" /> */}
         
         {view === 'tour' && isMobile && (
           <button 
@@ -170,6 +169,6 @@ export default function App() {
           </button>
         )}
       </div>
-    </>
+    </> 
   );
 }
